@@ -1,6 +1,6 @@
 """
-Given `trans_ab = _BidirectionalTransformationImp("a", "b", a2b)`, we have by default:
-`trans_ab.a_to_b` and `trans_ab.b_to_a`.
+Given `trans_ab = _BidirectionalTransformationImp("a", "b", a2b, lambda x: x.inv())`, we have by default:
+`trans_ab.a_to_b` which is `a2b` and `trans_ab.b_to_a` which is `a2b.inv()`.
 """
 import operator
 from collections import namedtuple
